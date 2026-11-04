@@ -1,35 +1,296 @@
-# Politique de Confidentialité – Snapora
-*Dernière mise à jour : Novembre 2026*
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapora – Politique de Confidentialité / Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00695c;
+            --primary-dark: #004d40;
+            --primary-light: #e0f2f1;
+            --accent: #10b981;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --radius: 16px;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container { max-width: 860px; margin: 0 auto; }
+        .header-card {
+            background: linear-gradient(135deg, #005f56 0%, #003631 100%);
+            color: white;
+            padding: 48px 36px;
+            border-radius: var(--radius);
+            box-shadow: 0 20px 25px -5px rgba(0, 77, 64, 0.25);
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .app-brand { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+        .app-logo {
+            width: 56px;
+            height: 56px;
+            background: white;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .app-title { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; }
+        .header-subtitle { font-size: 1.1rem; color: #ccfbf1; max-width: 600px; margin-bottom: 24px; }
+        .badge-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .lang-tabs {
+            display: flex;
+            background: #e2e8f0;
+            padding: 4px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            width: fit-content;
+        }
+        .lang-tab {
+            padding: 8px 20px;
+            border: none;
+            background: transparent;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lang-tab.active { background: var(--surface); color: var(--primary); box-shadow: 0 2px 4px rgba(0,0,0,0.06); }
+        .content-card {
+            background: var(--surface);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        .section { margin-bottom: 32px; }
+        .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .section-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        h2 { font-size: 1.35rem; font-weight: 700; color: #0f172a; }
+        p { color: #475569; margin-bottom: 12px; }
+        .feature-box {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .feature-box strong { color: #0f172a; }
+        ul { list-style: none; padding-left: 0; margin: 12px 0; }
+        li { position: relative; padding-left: 28px; margin-bottom: 10px; color: #475569; }
+        li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 800; }
+        .contact-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .contact-email { font-size: 1.1rem; font-weight: 700; color: var(--primary-dark); text-decoration: none; }
+        .contact-email:hover { text-decoration: underline; }
+        .footer { text-align: center; margin-top: 36px; color: var(--text-muted); font-size: 0.9rem; }
+        .hidden { display: none; }
+        @media (max-width: 640px) {
+            body { padding: 16px 12px; }
+            .header-card { padding: 32px 20px; }
+            .content-card { padding: 24px 18px; }
+            .app-title { font-size: 1.75rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header-card">
+        <div class="app-brand">
+            <div class="app-logo">📄</div>
+            <h1 class="app-title">Snapora</h1>
+        </div>
+        <p class="header-subtitle">Scanner de documents intelligent & Convertisseur PDF haute fidélité. Traitement 100% hors-ligne pour une confidentialité absolue.</p>
+        <div class="badge-list">
+            <span class="badge">🔒 100% Hors-Ligne (Offline)</span>
+            <span class="badge">🛡️ Zéro Collecte de Données</span>
+            <span class="badge">🚫 Sans Publicité</span>
+            <span class="badge">⚡ Conforme Google Play & RGPD</span>
+        </div>
+    </header>
 
-L'application **Snapora** a été conçue dans le respect absolu de votre vie privée. Cette politique explique comment vos données sont traitées lors de l'utilisation de Snapora.
+    <div class="lang-tabs">
+        <button class="lang-tab active" id="tab-fr" onclick="switchLanguage('fr')">🇫🇷 Français</button>
+        <button class="lang-tab" id="tab-en" onclick="switchLanguage('en')">🇬🇧 English</button>
+    </div>
 
-## 1. Principe Fondamental : 100% Hors-Ligne & Local
-Snapora fonctionne intégralement en local sur votre appareil. Aucune connexion à un serveur distant ni création de compte n'est requise.
+    <main class="content-card" id="content-fr">
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🛡️</div>
+                <h2>Notre Engagement : Confidentialité Absolue</h2>
+            </div>
+            <p>L'application <strong>Snapora</strong> a été développée avec une conviction centrale : <strong>vos documents ne doivent appartenir qu'à vous</strong>.</p>
+            <div class="feature-box">
+                <strong>Principe Zéro Cloud :</strong> Snapora ne téléverse, ne transmet et ne sauvegarde aucun de vos documents ou photos sur un serveur tiers. Tous les traitements s'exécutent strictement en local sur votre appareil.
+            </div>
+        </div>
 
-## 2. Données Collectées
-**Snapora ne collecte, ne stocke sur des serveurs distants, ne transmet et ne vend AUCUNE donnée personnelle.**
-- Aucun identifiant utilisateur
-- Aucune donnée de navigation ou télémétrie
-- Aucune publicité ni tracker tiers
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2>Données Personnelles et Télémétrie</h2>
+            </div>
+            <ul>
+                <li><strong>Aucune création de compte :</strong> Aucun identifiant ni inscription requis.</li>
+                <li><strong>Aucune télémétrie intrusive :</strong> Aucun tracker publicitaire ni outil d'analyse comportementale.</li>
+                <li><strong>Aucun partage de données :</strong> Vos données ne sont ni collectées, ni vendues.</li>
+            </ul>
+        </div>
 
-## 3. Utilisation des Autorisations de l'Appareil
-- **Appareil photo (`android.permission.CAMERA`)** : Utilisé exclusivement et temporairement en temps réel pour vous permettre de prendre des photos de vos documents physiques afin de les convertir en PDF. Les images restent uniquement sur votre appareil.
-- **Stockage / Photos** : Utilisé uniquement lorsque vous choisissez d'importer des images existantes de votre galerie ou d'enregistrer des documents PDF sur votre stockage local.
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📱</div>
+                <h2>Autorisations Système Requises</h2>
+            </div>
+            <p>Snapora demande uniquement les permissions strictement nécessaires :</p>
+            <ul>
+                <li><strong>Appareil Photo (<code>android.permission.CAMERA</code>) :</strong> Utilisé en direct lorsque vous numérisez un document physique. Aucune image n'est prise à votre insu.</li>
+                <li><strong>Stockage / Photos :</strong> Utilisé pour importer des images de votre galerie ou enregistrer vos fichiers PDF générés en local.</li>
+            </ul>
+        </div>
 
-## 4. Partage des Documents
-Les documents PDF générés sont enregistrés dans l'espace de stockage de votre appareil. Vous gardez le contrôle total sur leur partage (par e-mail, messagerie ou application tierce de votre choix).
+        <div class="contact-box">
+            <div>
+                <strong>Une question concernant la confidentialité ?</strong>
+                <p style="margin: 0; color: #475569;">Le développeur officiel est à votre disposition.</p>
+            </div>
+            <a href="mailto:crllcolas@gmail.com" class="contact-email">✉️ crllcolas@gmail.com</a>
+        </div>
+    </main>
 
-## 5. Contact
-Pour toute question concernant cette politique de confidentialité ou l'application Snapora : **crllcolas@gmail.com**
+    <main class="content-card hidden" id="content-en">
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🛡️</div>
+                <h2>Our Commitment: Complete Privacy</h2>
+            </div>
+            <p><strong>Snapora</strong> is built with one mission: <strong>your documents belong strictly to you</strong>.</p>
+            <div class="feature-box">
+                <strong>Zero Cloud Policy:</strong> Snapora never uploads or syncs your documents to any cloud server. All document scanning and PDF processing run 100% locally on your smartphone.
+            </div>
+        </div>
 
----
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📊</div>
+                <h2>Data Collection & Tracking</h2>
+            </div>
+            <ul>
+                <li><strong>No account required:</strong> Instant usage without signup or credentials.</li>
+                <li><strong>No advertising trackers:</strong> Zero tracking SDKs or analytics tools.</li>
+                <li><strong>Zero data selling:</strong> Your files and activity stay strictly private.</li>
+            </ul>
+        </div>
 
-# Privacy Policy – Snapora (English)
-*Last updated: November 2026*
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📱</div>
+                <h2>Device Permissions</h2>
+            </div>
+            <ul>
+                <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Accessed strictly in real-time when photographing paper documents.</li>
+                <li><strong>Storage:</strong> Used solely to import pictures and save created PDF documents on your device.</li>
+            </ul>
+        </div>
 
-**Snapora** is built with user privacy as our primary principle.
-- **Zero Data Collection**: Snapora does not collect, store on external servers, or sell any personal data.
-- **100% Offline Processing**: All document scanning and PDF generation are performed locally on your device.
-- **Device Permissions**: The camera (`android.permission.CAMERA`) is used strictly to capture physical documents for scanning. Storage access is used only to import images from your gallery and save created PDFs.
-- **No Ads & No Tracking**: No third-party SDKs, telemetry, or advertising trackers are included.
-- **Contact**: For questions regarding privacy, please contact **crllcolas@gmail.com**
+        <div class="contact-box">
+            <div>
+                <strong>Questions or Feedback?</strong>
+                <p style="margin: 0; color: #475569;">Contact the developer directly.</p>
+            </div>
+            <a href="mailto:crllcolas@gmail.com" class="contact-email">✉️ crllcolas@gmail.com</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Snapora. Tous droits réservés / All rights reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 6px;">Application Android 100% Locale & Conforme aux règles Google Play Store.</p>
+    </footer>
+</div>
+
+<script>
+    function switchLanguage(lang) {
+        const frCard = document.getElementById('content-fr');
+        const enCard = document.getElementById('content-en');
+        const tabFr = document.getElementById('tab-fr');
+        const tabEn = document.getElementById('tab-en');
+        if (lang === 'en') {
+            frCard.classList.add('hidden');
+            enCard.classList.remove('hidden');
+            tabFr.classList.remove('active');
+            tabEn.classList.add('active');
+        } else {
+            enCard.classList.add('hidden');
+            frCard.classList.remove('hidden');
+            tabEn.classList.remove('active');
+            tabFr.classList.add('active');
+        }
+    }
+</script>
+</body>
+</html>
